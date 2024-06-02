@@ -23,13 +23,19 @@
                 cantidad = document.querySelector('.cantidad')
                 aumentar = Number(cantidad.innerHTML)
                 aumentar = aumentar + 1
-                cantidad.innerHTML = aumentar"
+                cantidad.innerHTML = aumentar
+                total = document.querySelector('.valor-total')
+                total.innerHTML=aumentar * precio
+                "
                 >+</button>
                 <button onclick="
                 cantidad = document.querySelector('.cantidad')
                 disminuir = Number(cantidad.innerHTML)
                 disminuir = disminuir - 1
-                cantidad.innerHTML = disminuir"
+                cantidad.innerHTML = disminuir
+                total = document.querySelector('.valor-total')
+                total.innerHTML=disminuir * precio
+                "
                 >-</button>
               </p>
             </div>
